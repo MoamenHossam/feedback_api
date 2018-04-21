@@ -5,20 +5,19 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.3.1
+
+* Rails version 5.2
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation #mysql database "feedbacks"
 
-* Database initialization
+* there an issue using memory caching in rails 5.2,
+  the cache_key is no longer consisting of the object id + updated_at,
+  the cache_key now consist of just the object name + id ex: "feedback/15"
+  so the memory caching not working quite right.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* sidekiq, Elasticsearch included.
